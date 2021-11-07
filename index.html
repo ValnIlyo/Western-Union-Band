@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WUB</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+<body>
+    <div id="overlay" onclick="off()">
+        <div id="text">
+            <div>
+                <p>Label: EMI – EMGS-5010</p>
+                <p>Released: 1977</p>
+                <p>Style: Pop Rock</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="top-bar">
+            <a href="https://en.wikipedia.org/wiki/Western_Union_Band"><span>Western Union Band</span></a>
+            <i onclick="on()" class="material-icons-outlined" title="Info">info</i>
+        </div>
+        <div class="image">
+            <img src="WUB-640px.jpg" alt="Western Union Band">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src="" download></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="looped" class="material-icons" title="Playlist Looped">repeat</i>
+            <i id="prev" class="material-icons" title="Previous">skip_previous</i>
+            <div id="play-pause">
+                <i id="play" class="material-icons" title="Play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons" title="Next">skip_next</i>
+            <i id="more-music" class="material-icons" title="Music List">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="list material-icons">queue_music</i>
+                    <span>Music list</span>
+                </div>
+                <i id="close" class="material-icons" title="Close">close</i>
+            </div>
+            <ul>
+                <!-- here li list are coming from js -->
+            </ul>
+        </div>
+    </div>
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
